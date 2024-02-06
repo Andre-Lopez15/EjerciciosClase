@@ -1,10 +1,5 @@
-# Crear el diccionario con la tabla dada
-carreras = {
-    'SISTEMAS': {'PROGRA2': 'SUELOS', 'ALGO': 'DIBUJO', 'POO': 'CARGAS'},
-    'CIVIL': {'SUELOS': 'MM110', 'DIBUJO': 'MM111', 'CARGAS': 'CALCULO'},
-    'MATEMATICAS': {'MM110': None, 'MM111': None, 'CALCULO': None}
-}
 
+carreras = {}
 clases = []
 seguir = True
 continuar = True
