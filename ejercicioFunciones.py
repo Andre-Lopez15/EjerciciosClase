@@ -18,12 +18,9 @@ def actualizar_elemento(diccionario, mensaje):
     print("Diccionario antes de actualizar:", diccionario)
     if elemento_actual in diccionario:
         nuevo_valor = input(mensaje)
-        # Buscamos el índice del elemento actual
         indice = list(diccionario.keys()).index(elemento_actual)
-        # Creamos una lista de claves y la actualizamos con el nuevo valor
         claves = list(diccionario.keys())
         claves[indice] = nuevo_valor
-        # Creamos un nuevo diccionario con las claves actualizadas
         nuevo_diccionario = {nueva_clave: diccionario[clave] for nueva_clave, clave in zip(claves, diccionario)}
         print("Diccionario después de actualizar:", nuevo_diccionario)
         print("Elemento actualizado")
@@ -42,7 +39,6 @@ def borrar_elemento(diccionario, mensaje):
     else:
         print("El elemento especificado no existe.")
 
-# Función para agregar clases a una carrera específica
 def agregar_clases_a_carrera(carreras):
     carrera_destino = input("Ingrese el nombre de la carrera para agregar las clases: ")
     if carrera_destino in carreras:
@@ -74,7 +70,6 @@ def agregar_clases_a_carrera(carreras):
     else:
         print("La carrera especificada no existe en el diccionario de carreras.")
 
-# Función principal
 def main():
     carreras = {} 
 
